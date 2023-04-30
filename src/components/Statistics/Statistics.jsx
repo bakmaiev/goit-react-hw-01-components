@@ -3,13 +3,16 @@ import PropTypes from 'prop-types';
 export const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
-      <h2 className="title">{title}</h2>
-
+      {{ title } && <h2 className="title">{title}</h2>}
       <ul className="stat-list">
-        <li className="item">
-          <span className="label">{stats.label}</span>
-          <span className="percentage">{stats.percentage}</span>
-        </li>
+        {stats.map(e => {
+          return (
+            <li key={e.id} className="item">
+              <span className="label">{e.label}</span>
+              <span className="percentage">{e.percentage}%</span>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );
