@@ -1,0 +1,26 @@
+.transactionHistory {
+    width: fit-content;
+    margin: 50px auto;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    width: 300px;
+    background-color: darkslategrey;
+    color: #f2fcfe;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.item {
+    /* width: 300px; */
+    padding: 20px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+.list:nth-child(2n) {
+    background-color: #f2fcfe;
+}

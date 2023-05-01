@@ -1,5 +1,5 @@
 .statistics {
-    max-width: 400px;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
