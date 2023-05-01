@@ -38,17 +38,17 @@
 
 .label {
     font-size: 15px;
-    color: rgb(159, 165, 173);
+    color: snow;
 }
 
 .percentage {
     font-weight: 600;
     font-size: 20px;
-    color: inherit;
+    color: #f2fcfe;
 }
 
-/* .docx {
-    background-color: aqua;
+.docx {
+    background-color: darkcyan;
 }
 
 .pdf {
@@ -60,5 +60,5 @@
 }
 
 .psd {
-    background-color: aquamarine;
-} */
+    background-color: darkorange;
+}

@@ -9,7 +9,7 @@
 
 .item {
     background-color: #f2fcfe;
-    padding: 10px 0;
+    padding: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -20,4 +20,26 @@
     font-weight: 600;
     font-size: 20px;
     color: inherit;
+}
+
+.avatar {
+    width: 40px;
+    padding: 5px;
+    border: 1px solid rgb(190, 196, 204);
+    border-radius: 10%;
+}
+
+.status{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.online {
+    background-color: green;
+}
+
+.offline {
+    background-color: red;
 }

@@ -8,7 +8,7 @@ export const Statistics = ({ title, stats }) => {
       <ul className={css.statList}>
         {stats.map(e => {
           return (
-            <li key={e.id} className={css.item}>
+            <li key={e.id} className={`${css.item} ${css[e.label.slice(1)]}`}>
               <span className={css.label}>{e.label}</span>
               <span className={css.percentage}>{e.percentage}%</span>
             </li>
@@ -21,9 +21,11 @@ export const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.exact({
-    id: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired,
-  }),
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ),
 };
