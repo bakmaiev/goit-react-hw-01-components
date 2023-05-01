@@ -3,6 +3,7 @@
     padding-bottom: 0;
     max-width: 300px;
     background-color: #f2fcfe;
+    border-radius: 20px;
     box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -20,6 +21,7 @@
 .stats {
     display: flex;
     background-color: #E0EAFC;
+    border-radius: 0 0 20px 20px;
 }
 
 .avatar {

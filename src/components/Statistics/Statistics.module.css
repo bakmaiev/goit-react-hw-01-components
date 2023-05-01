@@ -6,6 +6,7 @@
     margin: 50px auto;
     padding-bottom: 0;
     background-color: #f2fcfe;
+    border-radius: 20px;
     box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -30,6 +31,7 @@
     gap: 10px;
     width: 75px;
     border-top: 1px solid rgb(190, 196, 204);
+    border-radius: 0 20px 20px 20px;
 }
         
 .item:not(:last-child) {
